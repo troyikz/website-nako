@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Webpage</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0PDQ0NDQ0NDQ0NDQ0NDQ0NCA8IDQ0NFREWFhURExMYHSggGBolGxMTITEhJSkrLi4uFx8zODMsNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIALcBEwMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAAAAQIDBAUH/8QAIRABAQEAAgICAwEBAAAAAAAAAAECEUEDMSFRYXGBEiL/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A/aAAOEaOAQRQAAAWQCR2zngznhoAAAAAAAAAAAAAAAABAABAAQAEBxqyiA2JK0BY5+nUueQcws49qBI7Zzw5ZrtnXIKAAAAAAAAAAAAAAAAgAAgAIAlpauc9gf5o2A8wKA1KgDcVmNwEueXKziu8NZ5BxWVLOFB1zeVcpXSUFAAAAAAAAAAAAQAAQAEAS0tXOe6BnPbYAAA86gA1EagJw3KhwDYzK0Cazy5WcOyWcg5rE44UG5VYjYAAAAAAAACAACAAgCWlq5z3QM5+2wABAORQHBRqARRYAsFBLCJasBQASxnhq1IAoAoAAAAACAACAAgCWlq5z3QM57rYAAyA0ICiAMRRQIsIoDNpasgEigAlpazIBI0ACgAJazLzfwDYACAACAAgCWlq5z3QM57rYAAz7BVABmlQAQBqLDhQGbS1ZAJFABLS1mQCRoAFABLS3hyuuf0C28t4jOY6AAAzb8/tU3PhjOuqDYIAlo1nIJnPdbAAEBGgAZpUAQQAQB2ZtWkgEigAlpazIBI0ACgAlvHyavE5rz73/q/j6BrWuf01mM5jpIC5jSKAAA5ay6s6Bzzrq/ytMaiZ31f4DpVzrqspQdhzxrqtgJyJQa5Ss8ryAhUAQQAQB6AAEtLWYBI0KCKACa1JOaa1JOb6ePyeS6v4nqA1vyXV/HUXMYzHXMBvLcZjQKIAogCpQBjTnqOtY0DON9X+Vtx1F8fk6v8AKDpWs66rKUHZGM66rQFZVAORABBAFQB6UtLWZAI0KAAAmtSTm+jepJzfiR8/zeW7v1OoDXl8t1fx1DMZzHTMBvMdIzmNwFVAFEAUQBRABKqUHPUctR21HPUA8Xk6vvq/bq8uo34fJz/zffV+wdqudfaJQbGM1oCs1pATkSqAADupFAAAZ3qSc34kN6knNvEj53n813fqdQF83mu79TqM5iSOkgNZjpmM5jpmA1I0gCiAKIAogCiAKIAWOeo6MaBxs6dPHjj991rM4AAACUKCjMqgIoAAD0RQATepJbfU+aAPmefz3d+pPUYyAOmY6ZgA6ZjcAFAAAAAAAAAAAAQAQAAAAABIAKAAAD//2Q==');
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: rgb(18, 10, 10);
+        }
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            left: 0%;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            text-align: right;
+        }
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: rgb(18, 10, 10);
+            font-size: 1.2em;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .logout-btn {
+            padding: 10px 20px;
+            background-color: rgb(94, 27, 27);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.1em;
+            margin-top: 20px;
+        }
+        .logout-btn:hover {
+            background-color: rgb(24, 24, 17);
+        }
+        /* Container for images */
+        .image-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding-top: 100px; /* To avoid overlapping with navbar */
+            margin-top: 50px;
+        }
+        .image-item {
+            position: relative;
+            text-align: center;
+        }
+        .image-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .image-item .text {
+            margin-top: 10px;
+            font-size: 1em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="homepage.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Logout</a>
+    </div>
+    
+    <h1>Welcome to My Webpage!</h1>
+    
+    <!-- Image grid container -->
+    <div class="image-container">
+        <div class="image-item">
+            <img src="https://imgs.search.brave.com/MYkogMIp70qcZVllexb0qC1-iJSDqi_FRSfq95px11I/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZGFpbHlwYXdzLmNv/bS90aG1iLzhBTzQx/X2dneGppRGhIdDBC/TUF3bUluTVhsTT0v/NTc2eDc2OC9maWx0/ZXJzOm5vX3Vwc2Nh/bGUoKTptYXhfYnl0/ZXMoMTUwMDAwKTpz/dHJpcF9pY2MoKTpm/b2NhbCg0NTl4NTkw/OjQ2MXg1OTIpL2Rv/Z28tYXJnZW50aW5v/LXZlcnRpY2FsLW9u/LWdyYXNzLTQ5ODAy/ODQ1My1lMjQ1MTdl/NDEzM2Y0ZGY1YWM2/N2I1Y2U4NGVjYzVk/NC5qcGc" alt="Image 1">
+            <div class="text">The Dogo Argentino is an Argentine breed of large dog, originating from Córdoba in central Argentina, bred in the early 20th century for hunting large game such as peccaries, wild boar, and pumas. The foundation stock included the Old Cordoba Fighting Dog, Bull Terrier, Pyrenean Mastiff, and Irish Wolfhound.</div>
+        </div>
+        <div class="image-item">
+            <img src="https://via.placeholder.com/300" alt="Image 2">
+            <div class="text">Text for Image 2</div>
+        </div>
+        <div class="image-item">
+            <img src="https://via.placeholder.com/300" alt="Image 3">
+            <div class="text">Text for Image 3</div>
+        </div>
+        <div class="image-item">
+            <img src="https://via.placeholder.com/300" alt="Image 4">
+            <div class="text">Text for Image 4</div>
+        </div>
+        <div class="image-item">
+            <img src="https://via.placeholder.com/300" alt="Image 5">
+            <div class="text">Text for Image 5</div>
+        </div>
+        <div class="image-item">
+            <img src="https://via.placeholder.com/300" alt="Image 6">
+            <div class="text">Text for Image 6</div>
+        </div>
+        <div class="image-item">
+            <img src="https://via.placeholder.com/300" alt="Image 7">
+            <div class="text">Text for Image 7</div>
+        </div>
+        <div class="image-item">
+            <img src="https://via.placeholder.com/300" alt="Image 8">
+            <div class="text">Text for Image 8</div>
+        </div>
+        <div class="image-item">
+            <img src="https://via.placeholder.com/300" alt="Image 9">
+            <div class="text">Text for Image 9</div>
+        </div>
+        <div class="image-item">
+            <img src="https://via.placeholder.com/300" alt="Image 10">
+            <div class="text">Text for Image 10</div
